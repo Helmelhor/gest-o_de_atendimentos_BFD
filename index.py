@@ -10,7 +10,7 @@ while True:
           ''')
     opcao = input('Digite a opção desejada: ')
     if opcao == '1':
-        print('Adicionar atendimentos')
+        atendimentos.adicionar_atendimento()
     elif opcao == '2':
         print('Pesquisar atendimentos')
     elif opcao == '3':
