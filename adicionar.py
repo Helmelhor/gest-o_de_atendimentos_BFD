@@ -14,7 +14,7 @@ def adicionar_atendimento():
 
 
     atendimento = {
-        "id": len(lista_atendimentos) + 1,
+        "id_atendimento": len(lista_atendimentos) + 1,
         "nome": nome,
         "servico": servico,
         "valor": valor

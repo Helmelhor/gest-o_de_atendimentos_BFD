@@ -3,6 +3,7 @@ import atendimentos
 import editar
 from atendimentos import atendimentos as lista_atendimentos
 import pesquisar
+import remover
 
 while True:
     print('''Bem vindo ao sistema de atendimentos!
@@ -21,7 +22,7 @@ while True:
     elif opcao == '3':
         editar.editar_atendimento()
     elif opcao == '4':
-        print('Remover atendimentos')
+        remover.remover_atendimento()
     elif opcao == '5':
         break
     else:
