@@ -1,4 +1,8 @@
+import adicionar
 import atendimentos
+import editar
+from atendimentos import atendimentos as lista_atendimentos
+import pesquisar
 
 while True:
     print('''Bem vindo ao sistema de atendimentos!
@@ -7,15 +11,18 @@ while True:
           2- Pesquisar atendimentos
           3- Editar atendimentos
           4- Remover atendimentos
+          5- Sair
           ''')
     opcao = input('Digite a opção desejada: ')
     if opcao == '1':
-        print('Adicionar atendimentos')
+        adicionar.adicionar_atendimento()
     elif opcao == '2':
-        print('Pesquisar atendimentos')
+        pesquisar.pesquisar_atendimento()
     elif opcao == '3':
-        print('Editar atendimentos')
+        editar.editar_atendimento()
     elif opcao == '4':
         print('Remover atendimentos')
+    elif opcao == '5':
+        break
     else:
         print('Opção inválida. Tente novamente.')
