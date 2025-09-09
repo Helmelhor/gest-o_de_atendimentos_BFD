@@ -12,7 +12,7 @@ def editar_atendimento():
         print("ID inválido.")
         return
 
-    atendimento = next((a for a in atendimentos if a["id"] == id_editar), None)
+    atendimento = next((a for a in atendimentos if a["id_atendimento"] == id_editar), None)
     if not atendimento:
         print("Atendimento não encontrado.")
         return

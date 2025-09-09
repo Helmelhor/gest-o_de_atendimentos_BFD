@@ -9,6 +9,6 @@ def pesquisar_atendimento():
     if encontrados:
         print("\nAtendimentos encontrados:")
         for a in encontrados:
-            print(f"ID: {a['id']} | Nome: {a['nome']} | Serviço: {a['servico']} | Valor: {a['valor']}")
+            print(f"ID: {a['id_atendimento']} | Nome: {a['nome']} | Serviço: {a['servico']} | Valor: {a['valor']}")
     else:
         print("Nenhum atendimento encontrado com esse termo.")
